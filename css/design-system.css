@@ -41,9 +41,10 @@ main {
 }
 
 section {
-  display:grid;
-  grid-template-columns: 1fr 2fr;
-  grid-auto-rows:min-content;
+  background:#fff;
+  box-shadow: 3px 3px 2px 1px rgba(111, 111, 111, .2);
+  padding:2rem;
+  margin-bottom:2rem;
 }
 
 
@@ -74,6 +75,8 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight:700;
+  line-height:1;
+  margin-bottom:1.25rem;
 }
 
 h1 {
@@ -99,7 +102,86 @@ h6 {
 p, li {
   font-size: 1rem;
   line-height: 1.5;
+  margin-bottom:1rem;
 }
+
+.section-label {
+  text-transform: uppercase;
+  font-weight:700;
+}
+
+.section-break {
+  text-transform: uppercase;
+  font-weight:700;
+  margin-top:3rem;
+}
+
+/* Color samples */
+
+
+
+  .color-gray {
+    background-color: #8D9AA6;
+  }
+    .color-bright-yellow {
+    background-color: #F2BC1B;
+  }
+    .color-medium-yellow {
+    background-color: #F2B138;
+  }
+    .color-medium-brown {
+    background-color: #A66312;
+  }
+    .color-deep-brown {
+    background-color: #736048;
+  }
+
+
+.primary-hue {
+  display: flex;
+  padding:3rem 1rem;
+  color:#ffffff;
+  font-family: Montserrat;
+}
+
+.primary-hue > div {
+  width:33%;
+}
+
+.secondary-hue {
+  display: flex;
+  padding:1.5rem 1rem;
+  color:#ffffff;
+  font-family: Montserrat;
+}
+
+.secondary-hue > div {
+  width:33%;
+}
+
+.neutral-hue {
+  display: flex;
+  padding:1.5rem 1rem;
+  color:#ffffff;
+  font-family: Montserrat;
+}
+
+.neutral-hue > div {
+  width:33%;
+}
+
+.accent-hue {
+  display: flex;
+  padding:.5rem 1rem;
+  color:#ffffff;
+  font-family: Montserrat;
+}
+
+.accent-hue > div {
+  width:33%;
+}
+
+
 
 img {
   width:100%;
