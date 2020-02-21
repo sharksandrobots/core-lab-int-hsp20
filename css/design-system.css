@@ -201,6 +201,9 @@ p, li {
 
 /* Components */
 
+
+/* -- buttons -- */
+
 .button {
   background-color: #736048; 
   border: none;
@@ -252,6 +255,8 @@ p, li {
   cursor: not-allowed;
 }
 
+/* -- input field -- */
+
 
 input[type=text] {
   padding: 12px 20px;
@@ -262,6 +267,9 @@ input[type=text] {
   color: #A66312; 
 
 }
+
+/* -- dropdown -- */
+
 
 .dropbtn {
   background-color: #736048; 
@@ -304,6 +312,8 @@ input[type=text] {
 .dropdown:hover .dropbtn {
   background-color: #A66312;
 }
+
+/* -- switch -- */
 
 
 .switch {
@@ -367,6 +377,9 @@ input:checked + .slider:before {
 }
 
 
+/* -- date picker -- */
+
+
 label {
     display: block;
     font: 1rem 'Montserrat', sans-serif;
@@ -380,6 +393,9 @@ input {
 .pointer{
   cursor: pointer;
 }
+
+/* -- loader -- */
+
 
 .loader {
   border: 16px solid #ccc;
