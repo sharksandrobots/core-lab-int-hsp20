@@ -1,6 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css?family=Amiri|Montserrat&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Amiri:400,700|Noto+Sans+JP:400,500,900&display=swap');
 
 html {
   font-size: 1rem;
@@ -22,7 +22,7 @@ main {
 
 #ds-container {
   display:grid;
-  grid-template-columns: 3fr 6fr 1fr;
+  grid-template-columns: 3fr 7fr;
   grid-auto-rows:min-content;
   grid-gap:2rem;
 }
@@ -34,13 +34,21 @@ main {
   grid-gap:1rem;
 }
 
+.design-patterns-group {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows:min-content;
+  grid-gap:1rem;
+}
+
+
 
 #left-sidebar {
   grid-column: 1 / 2;
 }
 
 #main-content {
-  grid-column: 2 / 3;
+  grid-column: 2 / 4;
 }
 
 #right-sidebar {
@@ -64,6 +72,22 @@ section {
 
 .cg-3 {
   grid-column: 3 / 4;
+}
+
+.card-image {
+    background-color: #E6ECF2;
+    padding:1rem;
+}
+.card-image > img {
+    margin-bottom:1rem;
+}
+
+.profile-card {
+    background-color: #434E59;
+    padding:1rem;
+}
+.profile-card > img {
+    margin-bottom:1rem;
 }
 
 
@@ -92,26 +116,35 @@ a {
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight:700;
   line-height:1;
-  margin-bottom:1.25rem;
 }
 
 h1 {
   font-size:5rem;
+  margin-bottom:1.25rem;
+
 }
 h2 {
   font-size:3.375rem;
+  margin-bottom:1.25rem;
+
 }
 h3 {
   font-size:2.25rem;
+  margin-bottom:1rem;
+
 }
 h4 {
   font-size:1.5rem;
+  margin-bottom:1rem;
+
 }
 h5 {
   font-size:1;
+  margin-bottom:.5rem;
+
 }
 
 h6 {
@@ -135,16 +168,30 @@ p, li {
   margin-top:3rem;
 }
 
+.text-white {
+  color:#fff;
+}
+
+.title {
+  font-style: italic;
+
+
+}
+
 /* Color samples */
 
   .color-gray {
-    background-color: #8D9AA6;
+    background-color: #434E59;
+  }
+
+    .color-light-gray {
+    background-color: #E6ECF2;
   }
     .color-bright-yellow {
     background-color: #F2BC1B;
   }
     .color-medium-yellow {
-    background-color: #F2B138;
+    background-color: #CF9730;
   }
     .color-medium-brown {
     background-color: #A66312;
@@ -158,7 +205,7 @@ p, li {
   display: flex;
   padding:3rem 1rem;
   color:#ffffff;
-  font-family: Montserrat;
+  font-family: 'Noto Sans JP';
 }
 
 .primary-hue > div {
@@ -169,7 +216,7 @@ p, li {
   display: flex;
   padding:1.5rem 1rem;
   color:#ffffff;
-  font-family: Montserrat;
+  font-family: 'Noto Sans JP';
 }
 
 .secondary-hue > div {
@@ -180,7 +227,7 @@ p, li {
   display: flex;
   padding:1.5rem 1rem;
   color:#ffffff;
-  font-family: Montserrat;
+  font-family: 'Noto Sans JP';
 }
 
 .neutral-hue > div {
@@ -191,7 +238,7 @@ p, li {
   display: flex;
   padding:.5rem 1rem;
   color:#ffffff;
-  font-family: Montserrat;
+  font-family: 'Noto Sans JP';
 }
 
 .accent-hue > div {
@@ -205,14 +252,14 @@ p, li {
 /* -- buttons -- */
 
 .button {
-  background-color: #736048; 
+  background-color: #CF9730; 
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 8px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-family: Montserrat;
+  font-family: 'Noto Sans JP';
   font-size: 16px;
   margin: 4px 2px;
   transition-duration: 0.4s;
@@ -220,7 +267,7 @@ p, li {
 }
 
 .button1 {
-  background-color: #736048; 
+  background-color: #CF9730; 
   color: white; 
 }
 
@@ -268,7 +315,7 @@ input[type=text] {
 
 }
 
-/* -- dropdown -- */
+  /* -- dropdown -- */
 
 
 .dropbtn {
@@ -277,7 +324,7 @@ input[type=text] {
   color: white;
   padding: 16px;
   font-size: 16px;
-  font-family: Montserrat;
+  font-family: 'Noto Sans JP';
   border: none;
   cursor: pointer;
 }
@@ -382,7 +429,7 @@ input:checked + .slider:before {
 
 label {
     display: block;
-    font: 1rem 'Montserrat', sans-serif;
+    font: 1rem 'Noto Sans JP', sans-serif;
 }
 
 input {
@@ -422,6 +469,68 @@ input {
 img {
   width:100%;
 }
+
+
+/*-- sign up form --*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width:90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #E6ECF2;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #CF9730;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #434E59;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.sign-up-container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 
 
 
