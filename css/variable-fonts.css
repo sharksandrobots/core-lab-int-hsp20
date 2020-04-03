@@ -1,6 +1,11 @@
 /* Load the variable font */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,700;1,100;1,700&display=swap');
-
+@font-face {
+  font-family: 'Roboto VF';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/57225/Roboto-VF.woff2') format('woff2-variations');
+  font-stretch: 75% 100%;
+  font-style: oblique 0deg 12deg;
+  font-weight: 100 900;
+}
 
 :root {
   --text-weight: 500;
@@ -10,7 +15,7 @@
 
 html {
   box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Roboto VF", "Roboto", sans-serif;
 }
 
 *, *:before, *:after {
@@ -22,8 +27,7 @@ body {
 }
 
 .container {
-  font-family: "Josefin Sans", sans-serif;
-  margin: 0 auto;
+  font-family: "Roboto VF", "Roboto", sans-serif;  margin: 0 auto;
   max-width: 60rem;
   padding: 3rem;
   text-align: left;
