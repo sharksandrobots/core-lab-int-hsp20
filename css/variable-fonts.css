@@ -1,10 +1,10 @@
 /* Load the variable font */
 @font-face {
-  font-family: 'Roboto VF';
-  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/57225/Roboto-VF.woff2') format('woff2-variations');
+  font-family: 'Muli';
+  src: url('https://fonts.googleapis.com/css2?family=Muli');
   font-stretch: 75% 100%;
   font-style: oblique 0deg 12deg;
-  font-weight: 100 900;
+  font-weight: 300 900;
 }
 
 :root {
@@ -26,11 +26,11 @@ body {
 }
 
 .container {
-  font-family: "Roboto VF", "Roboto", sans-serif;
+  font-family: "Muli", sans-serif;
   margin: 0 auto;
   max-width: 60rem;
   padding: 3rem;
-  text-align: center;
+  text-align: left;
 }
 
 .demo-text {
@@ -40,6 +40,15 @@ body {
   font-weight: var(--text-weight);
   font-variation-settings: "wght" var(--text-weight), "wdth" var(--text-width), "slnt" var(--text-slant);
   margin: 0;
+}
+
+.demo-text-p {
+  font-size: 1rem;
+  font-stretch: var(--text-width);
+  font-style: oblique var(--text-slant);
+  font-weight: var(--text-weight);
+  font-variation-settings: "wght" var(--text-weight), "wdth" var(--text-width), "slnt" var(--text-slant);
+  margin: 0 0 1.5rem 0;
 }
 
 .controls {
