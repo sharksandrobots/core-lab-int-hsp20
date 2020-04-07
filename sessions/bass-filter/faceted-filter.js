@@ -1,14 +1,13 @@
 // not exactly vanilla as there is one lodash function
 
 var allCheckboxes = document.querySelectorAll('input[type=checkbox]');
-var allPlayers = Array.from(document.querySelectorAll('.player'));
+var allBasses = Array.from(document.querySelectorAll('.bass'));
 var checked = {};
 
-getChecked('startingReserves');
-getChecked('injured');
-getChecked('position');
-getChecked('nbaTeam');
-getChecked('conference');
+getChecked('brand');
+getChecked('color');
+getChecked('price');
+getChecked('strings');
 
 Array.prototype.forEach.call(allCheckboxes, function (el) {
   el.addEventListener('change', toggleCheckbox);
@@ -26,13 +25,12 @@ function getChecked(name) {
 }
 
 function setVisibility() {
-  allPlayers.map(function (el) {
-    var startingReserves = checked.startingReserves.length ? _.intersection(Array.from(el.classList), checked.startingReserves).length : true;
-    var injured = checked.injured.length ? _.intersection(Array.from(el.classList), checked.injured).length : true;
-    var position = checked.position.length ? _.intersection(Array.from(el.classList), checked.position).length : true;
-    var nbaTeam = checked.nbaTeam.length ? _.intersection(Array.from(el.classList), checked.nbaTeam).length : true;
-    var conference = checked.conference.length ? _.intersection(Array.from(el.classList), checked.conference).length : true;
-    if (startingReserves && injured && position && nbaTeam && conference) {
+  allBasses.map(function (el) {
+    var brand = checked.brand.length ? _.intersection(Array.from(el.classList), checked.brand).length : true;
+    var color = checked.color.length ? _.intersection(Array.from(el.classList), checked.color).length : true;
+    var price = checked.price.length ? _.intersection(Array.from(el.classList), checked.price).length : true;
+    var strings = checked.strings.length ? _.intersection(Array.from(el.classList), checked.strings).length : true;
+    if (brand && color && price && strings) {
       el.style.display = 'block';
     } else {
       el.style.display = 'none';
