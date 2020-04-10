@@ -1,21 +1,21 @@
 /* Load the variable font */
 @font-face {
-  font-family: 'Roboto VF';
-  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/57225/Roboto-VF.woff2') format('woff2-variations');
+  font-family: 'TINY';
+  src: url('../fonts/TINY5x3GX.ttf') format('truetype');
   font-stretch: 75% 100%;
   font-style: oblique 0deg 12deg;
   font-weight: 100 900;
 }
 
 :root {
-  --text-weight: 500;
+  --text-weight: 100;
   --text-width: 100;
   --text-slant: 0;
 }
 
 html {
   box-sizing: border-box;
-  font-family: "Roboto VF", "Roboto", sans-serif;
+  font-family: "TINY", sans-serif;
 }
 
 *, *:before, *:after {
@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-  font-family: "Roboto VF", "Roboto", sans-serif;  margin: 0 auto;
+  font-family: "TINY", "Roboto", sans-serif;  margin: 0 auto;
   max-width: 60rem;
   padding: 3rem;
   text-align: left;
