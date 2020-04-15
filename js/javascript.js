@@ -55,3 +55,13 @@ buttons.forEach(button => {
     elements[i].style.color = color;
   }
 }
+
+
+
+
+
+
+
+
+
+
