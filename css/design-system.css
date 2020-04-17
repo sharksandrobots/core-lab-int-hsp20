@@ -15,6 +15,16 @@ body {
   padding:5rem 0;
 }
 
+:root {
+  --wf-gray: #434E59;
+  --wf-light-gray: #E6ECF2;
+  --wf-bright-yellow: #F2BC1B;
+  --wf-medium-yellow: #CF9730;
+  --wf-medium-brown: #A66312;
+  --wf-deep-brown: #736048;
+  --body-text-color: var(--wf-medium-brown);
+}
+
 /* Structure */
 
 
@@ -160,6 +170,7 @@ p, li {
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom:1rem;
+  color:var(--body-text-color);
 }
 
 .section-label {
@@ -184,6 +195,8 @@ p, li {
 }
 
 /* Color samples */
+
+
 
   .color-gray {
     background-color: #434E59;
